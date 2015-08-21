@@ -1,0 +1,46 @@
+
+.product{
+    border: 1px solid black;
+    border-radius:10px;
+    width:300px;
+    margin: auto;
+    margin-bottom:20px;
+    padding:20px;
+    text-align: left;
+}
+.name{
+    
+}
+.bodyContainer{
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+.logout{
+    position:fixed;
+    top:20px;
+    left:20px;
+    
+}
+.basket{
+    position:fixed;
+    border: 1px solid black;
+    border-radius:10px;
+    top:20px;
+    right:20px;
+    width:200px;
+    margin: auto;
+    margin-bottom:20px;
+    padding:0 20px 20px 20px;
+    text-align: left;
+}
+.formWrapper{
+    text-align: left;
+    width:300px;
+    margin:auto;
+}
+.remove{
+    position:relative;
+    float:right;
+}
