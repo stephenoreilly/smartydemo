@@ -12,7 +12,6 @@
                      <br/><br/>
                      <input name="submit" type="submit" value="Log In"></input>
                  </form>
-                 <h2>Register</h2>
                 <form action="login.php" method="post">
                     <h2>Register</h2>
                     <input type="email" name="email" placeholder="Enter email address" value="{$email}"/>
