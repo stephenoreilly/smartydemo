@@ -7,14 +7,13 @@
     
     $link = new mysqli($server, $username, $password, $db);
 
- $query="CREATE TABLE users3 (
-        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        name VARCHAR(30) NOT NULL,
-        email VARCHAR(50),
-        password VARCHAR(50),
-        reg_date TIMESTAMP
-            );";
-
+ $query="CREATE TABLE items (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(30) NOT NULL,
+    price DECIMAL(10,2),
+    description VARCHAR(50),
+    reg_date TIMESTAMP
+    );"
 
 
     $res =mysqli_query($link,$query);
