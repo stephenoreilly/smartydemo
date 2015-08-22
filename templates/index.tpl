@@ -2,7 +2,7 @@
         <div class="bodyContainer">
             <div class="formWrapper"> 
                 <h1>My Shop</h1>
-                <p>Please Log In or Register to check out My Shop</p>
+                <p>Please Log In or <br/>Register to check out My Shop</p>
                 <p>{$errors}</p>
                  <h2>Login</h2>
                  <form action="login.php" method="post">
