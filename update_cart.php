@@ -1,7 +1,6 @@
 <?php
     require_once('shop_classes.php');
     require_once('connection.php');
-    $sessionid=$_SESSION['id'];
     if($_POST['remove']){
         $id=mysqli_real_escape_string($link,$_POST['remove']);
          $query="DELETE FROM shoppingcart

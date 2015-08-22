@@ -35,5 +35,5 @@ REFERENCES users3(id)
       //  password VARCHAR(50),
     //    reg_date TIMESTAMP
     //        )";
-    //    $query="INSERT INTO users2 (name, email, password)
-    //VALUES ('Beth','example@example.com','');";
+        $query="INSERT INTO users3 (name, email, password)
+    VALUES ('Beth','example@example.com','');";

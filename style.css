@@ -36,9 +36,12 @@
     text-align: left;
 }
 .formWrapper{
-    text-align: left;
+    text-align: center;
     width:300px;
     margin:auto;
+}
+.formWrapper form{
+    text-align: left;
 }
 .remove{
     position:relative;

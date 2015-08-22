@@ -1,7 +1,7 @@
 <?php
     include('login.php');
     require('smarty_header.php');
-    $smarty->assign('title','Login');
+    $smarty->assign('title','Login Page');
     
     $errors=$_SESSION['error'];
     $_SESSION['error']='';
