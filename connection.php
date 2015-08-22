@@ -7,14 +7,13 @@
     
     $link = new mysqli($server, $username, $password, $db);
 
- $query="CREATE TABLE shoppingcart (
-    
-    item_id INT(6) UNSIGNED NOT NULL,
-    user_id INT(6) UNSIGNED NOT NULL,
-    amount INT(6) UNSIGNED,
-    PRIMARY KEY (item_id, user_id)
-
-);";
+ $query="
+ALTER TABLE shoppingcart
+    ADD FOREIGN KEY (user_id)
+    REFERENCES users3(id);
+    ALTER TABLE shoppingcart
+    ADD FOREIGN KEY (item_id)
+    REFERENCES items(id);";
 
 
 
