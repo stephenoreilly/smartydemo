@@ -13,7 +13,7 @@
     price DECIMAL(10,2),
     description VARCHAR(50),
     reg_date TIMESTAMP
-    );"
+    );";
 
 
     $res =mysqli_query($link,$query);
