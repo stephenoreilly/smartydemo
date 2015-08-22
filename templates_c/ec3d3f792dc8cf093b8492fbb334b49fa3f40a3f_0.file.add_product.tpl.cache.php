@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.28-dev/44, created on 2015-08-22 07:23:40
+<?php /* Smarty version 3.1.28-dev/44, created on 2015-08-22 08:00:21
          compiled from "/home/ubuntu/workspace/smarty/templates/add_product.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:61078396055d8237c5ca801_41060444%%*/
+/*%%SmartyHeaderCode:81807303355d82c151bfdd3_78656769%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,13 +9,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ec3d3f792dc8cf093b8492fbb334b49fa3f40a3f' => 
     array (
       0 => '/home/ubuntu/workspace/smarty/templates/add_product.tpl',
-      1 => 1440199895,
+      1 => 1440230374,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '61078396055d8237c5ca801_41060444',
+  'nocache_hash' => '81807303355d82c151bfdd3_78656769',
   'variables' => 
   array (
+    'title' => 0,
     'errors' => 0,
     'formTextItems' => 0,
     'v' => 0,
@@ -23,17 +24,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.28-dev/44',
-  'unifunc' => 'content_55d8237c5fc530_14269060',
+  'unifunc' => 'content_55d82c151f9d08_49097171',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_55d8237c5fc530_14269060')) {
-function content_55d8237c5fc530_14269060 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_55d82c151f9d08_49097171')) {
+function content_55d82c151f9d08_49097171 ($_smarty_tpl) {
 if (!is_callable('smarty_modifier_capitalize')) require_once '/home/ubuntu/workspace/smarty/libs/plugins/modifier.capitalize.php';
 
-$_smarty_tpl->properties['nocache_hash'] = '61078396055d8237c5ca801_41060444';
-echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array('title'=>"My Page Title"), 0);
+$_smarty_tpl->properties['nocache_hash'] = '81807303355d82c151bfdd3_78656769';
+ob_start();
+echo $_smarty_tpl->tpl_vars['title']->value;
+$_tmp1=ob_get_clean();
+echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array('title'=>$_tmp1), 0);
 ?>
- 
+
 
         <div class="bodyContainer">
             <div class="formWrapper">
@@ -105,6 +109,7 @@ $_smarty_tpl->tpl_vars['k'] = $__foreach_v_1_saved_key;
 }
 ?>
                     <input class="formElement" type="submit" value="Submit" />
+                    <br/>
                     <br/>
                     <a href="mainpage.php">Home</a> 
                 </form>

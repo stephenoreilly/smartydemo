@@ -1,8 +1,10 @@
 {include file="header.tpl" title={$title} }
         <div class="bodyContainer">
             <div class="formWrapper"> 
+                <h1>My Shop</h1>
+                <p>Please Log In or Register to check out My Shop</p>
                 <p>{$errors}</p>
-                 <h1>Login</h1>
+                 <h2>Login</h2>
                  <form action="login.php" method="post">
                      <input type="email" name="loginemail" placeholder="Email" value="{$loginemail}"/>
                      <br/><br/>
@@ -10,7 +12,7 @@
                      <br/><br/>
                      <input name="submit" type="submit" value="Log In"></input>
                  </form>
-                 <h1>Register</h1>
+                 <h2>Register</h2>
                 <form action="login.php" method="post">
                     <input type="email" name="email" placeholder="Enter email address" value="{$email}"/>
                     <br/><br/>

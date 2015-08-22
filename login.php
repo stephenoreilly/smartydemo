@@ -1,8 +1,13 @@
 <?php
     include("connection.php");
-    if($_GET['logout']==1 && $_SESSION['id']) {
+    if($_POST['submit']=="Log Out" && $_SESSION['id']) {
         $message="You have been logged out";
+        $_SESSION['error']  = $message;
         session_destroy();
+        header("Location:index.php");
+    }
+    if($_SESSION['id']) {
+      header("Location:mainpage.php");
     }
     if($_POST['submit']=="Sign Up"){
         $_SESSION['error']='';

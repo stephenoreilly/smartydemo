@@ -1,4 +1,4 @@
-{include file="header.tpl" title="My Page Title"} 
+{include file="header.tpl" title={$title} }
 
         <div class="bodyContainer">
             <div class="formWrapper">
@@ -17,6 +17,7 @@
                         <br/><br/>
                     {/foreach}
                     <input class="formElement" type="submit" value="Submit" />
+                    <br/>
                     <br/>
                     <a href="mainpage.php">Home</a> 
                 </form>
