@@ -7,13 +7,16 @@
     
     $link = new mysqli($server, $username, $password, $db);
 
- $query="CREATE TABLE items (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(30) NOT NULL,
-    price DECIMAL(10,2),
-    description VARCHAR(50),
-    reg_date TIMESTAMP
-    );";
+ $query="CREATE TABLE shoppingcart (
+    
+    item_id INT(6) UNSIGNED NOT NULL,
+    user_id INT(6) UNSIGNED NOT NULL,
+    amount INT(6) UNSIGNED,
+    PRIMARY KEY (item_id, user_id)
+
+);";
+
+
 
 
     $res =mysqli_query($link,$query);
