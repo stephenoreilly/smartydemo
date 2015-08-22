@@ -40,6 +40,10 @@
     width:300px;
     margin:auto;
 }
+.formWrapper form{
+    border: 1px solid black;
+    border-radius:10px;
+}
 .remove{
     position:relative;
     float:right;

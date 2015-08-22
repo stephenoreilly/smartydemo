@@ -4,8 +4,8 @@
                 <h1>My Shop</h1>
                 <p>Please Log In or <br/>Register to check out My Shop</p>
                 <p>{$errors}</p>
-                 <h2>Login</h2>
                  <form action="login.php" method="post">
+                     <h2>Login</h2>
                      <input type="email" name="loginemail" placeholder="Email" value="{$loginemail}"/>
                      <br/><br/>
                      <input type="password" name="loginpassword" placeholder="Password"/>
@@ -14,6 +14,7 @@
                  </form>
                  <h2>Register</h2>
                 <form action="login.php" method="post">
+                    <h2>Register</h2>
                     <input type="email" name="email" placeholder="Enter email address" value="{$email}"/>
                     <br/><br/>
                     <input type="password" name="password"  placeholder="Enter password"/>
