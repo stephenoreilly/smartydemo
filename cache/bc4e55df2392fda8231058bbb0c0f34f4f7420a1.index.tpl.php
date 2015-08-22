@@ -1,40 +1,40 @@
 <?php
-/*%%SmartyHeaderCode:26708267455d7b3b5b4ef41_01209836%%*/
+/*%%SmartyHeaderCode:26806468455d8236c403e52_95696249%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '6cc9360372b253d2a5d0186159d5bd242ee2bbf6' => 
+    'bc4e55df2392fda8231058bbb0c0f34f4f7420a1' => 
     array (
-      0 => '/home/ubuntu/workspace/smarty/index.tpl',
+      0 => '/home/ubuntu/workspace/smarty/templates/index.tpl',
       1 => 1440199603,
       2 => 'file',
     ),
-    '318d9bfadce76f36893d5729faab15bc350fa81b' => 
+    '4a4efbb76ffe2f58bbfd8c3c66f6c54ddee39f3f' => 
     array (
-      0 => '/home/ubuntu/workspace/smarty/header.tpl',
+      0 => '/home/ubuntu/workspace/smarty/templates/header.tpl',
       1 => 1440109733,
       2 => 'file',
     ),
-    'ceca6480a74158770f63869eb09596e096c7d331' => 
+    '15792aba2aac6fcec5af959bbe2f7d1ca733c665' => 
     array (
-      0 => '/home/ubuntu/workspace/smarty/footer.tpl',
+      0 => '/home/ubuntu/workspace/smarty/templates/footer.tpl',
       1 => 1440109657,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '26708267455d7b3b5b4ef41_01209836',
+  'nocache_hash' => '26806468455d8236c403e52_95696249',
   'tpl_function' => 
   array (
   ),
   'version' => '3.1.28-dev/44',
-  'unifunc' => 'content_55d822b01e5dc6_78894176',
+  'unifunc' => 'content_55d823d1cb4432_16476759',
   'has_nocache_code' => false,
   'cache_lifetime' => 0,
 ),true);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_55d822b01e5dc6_78894176')) {
-function content_55d822b01e5dc6_78894176 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_55d823d1cb4432_16476759')) {
+function content_55d823d1cb4432_16476759 ($_smarty_tpl) {
 ?>
 <html> 
 <head> 
@@ -45,10 +45,10 @@ function content_55d822b01e5dc6_78894176 ($_smarty_tpl) {
 <body>
         <div class="bodyContainer">
             <div class="formWrapper"> 
-                <p></p>
+                <p>There were errors in your sign up details<br/>Please enter your email<br/>Please enter your password</p>
                  <h1>Login</h1>
                  <form action="login.php" method="post">
-                     <input type="email" name="loginemail" placeholder="Email" value="test4@test.com"/>
+                     <input type="email" name="loginemail" placeholder="Email" value=""/>
                      <br/><br/>
                      <input type="password" name="loginpassword" placeholder="Password"/>
                      <br/><br/>

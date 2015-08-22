@@ -1,40 +1,40 @@
 <?php
-/*%%SmartyHeaderCode:19565162155d7b629d87e19_50897259%%*/
+/*%%SmartyHeaderCode:116142609955d82375560758_00346524%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '63c7ae831e0282cd6f4b78059b9508af46a48e4c' => 
+    '9b176d98982947d0b4e898235548752d3da9d30d' => 
     array (
-      0 => '/home/ubuntu/workspace/smarty/mainpage.tpl',
+      0 => '/home/ubuntu/workspace/smarty/templates/mainpage.tpl',
       1 => 1440200229,
       2 => 'file',
     ),
-    '318d9bfadce76f36893d5729faab15bc350fa81b' => 
+    '4a4efbb76ffe2f58bbfd8c3c66f6c54ddee39f3f' => 
     array (
-      0 => '/home/ubuntu/workspace/smarty/header.tpl',
+      0 => '/home/ubuntu/workspace/smarty/templates/header.tpl',
       1 => 1440109733,
       2 => 'file',
     ),
-    'ceca6480a74158770f63869eb09596e096c7d331' => 
+    '15792aba2aac6fcec5af959bbe2f7d1ca733c665' => 
     array (
-      0 => '/home/ubuntu/workspace/smarty/footer.tpl',
+      0 => '/home/ubuntu/workspace/smarty/templates/footer.tpl',
       1 => 1440109657,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '19565162155d7b629d87e19_50897259',
+  'nocache_hash' => '116142609955d82375560758_00346524',
   'tpl_function' => 
   array (
   ),
   'version' => '3.1.28-dev/44',
-  'unifunc' => 'content_55d822b5a0df96_47693143',
+  'unifunc' => 'content_55d823cb1dcba1_72699278',
   'has_nocache_code' => false,
   'cache_lifetime' => 0,
 ),true);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_55d822b5a0df96_47693143')) {
-function content_55d822b5a0df96_47693143 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_55d823cb1dcba1_72699278')) {
+function content_55d823cb1dcba1_72699278 ($_smarty_tpl) {
 ?>
 <html> 
 <head> 
@@ -47,37 +47,7 @@ function content_55d822b5a0df96_47693143 ($_smarty_tpl) {
         <div class="bodyContainer">
             <div class="basket">
                 <h2>Basket</h2>
-                                    <form action="update_cart.php" method="post">
-                        Eggs - 
-                        <input class="remove" name="submit" type="submit" value="x" />
-                        Amount: 1
-                        <input type="hidden" name="remove" value="1">
-                    </form>
-                                    <form action="update_cart.php" method="post">
-                        Bread - 
-                        <input class="remove" name="submit" type="submit" value="x" />
-                        Amount: 4
-                        <input type="hidden" name="remove" value="2">
-                    </form>
-                                    <form action="update_cart.php" method="post">
-                        Cake - 
-                        <input class="remove" name="submit" type="submit" value="x" />
-                        Amount: 3
-                        <input type="hidden" name="remove" value="3">
-                    </form>
-                                    <form action="update_cart.php" method="post">
-                        Oranges - 
-                        <input class="remove" name="submit" type="submit" value="x" />
-                        Amount: 3
-                        <input type="hidden" name="remove" value="5">
-                    </form>
-                                    <form action="update_cart.php" method="post">
-                        Bananas - 
-                        <input class="remove" name="submit" type="submit" value="x" />
-                        Amount: 2
-                        <input type="hidden" name="remove" value="7">
-                    </form>
-                                <p>Total: $24.60</p>
+                                <p>Total: $0.00</p>
             </div>
             <h1>Items in My Shop</h1>
                             <div class="product">
@@ -195,6 +165,23 @@ function content_55d822b5a0df96_47693143 ($_smarty_tpl) {
                               <option value="4">4</option>
                             </select>
                             <input type="hidden" name="product" value="7">
+                            <input class="add" name="submit" type="submit" value="Add to cart" />
+                        <br/>
+                    </form>
+                </div>
+                            <div class="product">
+                    <div class="name">Name: Rice</div>
+                    <div class="price">Price: $3.05</div>
+                    <div class="description">Description: It's not too bad</div>
+                    <form action="update_cart.php" method="post">
+                            <label class="add" for="Rice"></label>
+                            <select name="amount" >
+                              <option value="1" selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                            </select>
+                            <input type="hidden" name="product" value="8">
                             <input class="add" name="submit" type="submit" value="Add to cart" />
                         <br/>
                     </form>

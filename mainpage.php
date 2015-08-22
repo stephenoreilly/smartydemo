@@ -9,7 +9,7 @@
     $smarty->assign('total',$total);
     $smarty->assign('items',$shop->items);
     $smarty->assign('title','My Shop');
-    $smarty->display('mainpage.tpl');
+    $smarty->display('templates/mainpage.tpl');
 
    
 ?>

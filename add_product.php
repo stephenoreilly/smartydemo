@@ -12,6 +12,6 @@
     $smarty->assign('formTextItems',array("name","description"));
     $smarty->assign('formNumberItems',array("price"));
     $smarty->assign('errors',$error);
-    $smarty->display("add_product.tpl"); 
+    $smarty->display("templates/add_product.tpl"); 
 
 ?> 

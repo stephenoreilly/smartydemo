@@ -12,7 +12,7 @@
     $smarty->assign('errors',$errors);
     $smarty->assign('loginemail',$loginemail);
     $smarty->assign('email',$email);
-    $smarty->display('index.tpl');
+    $smarty->display('templates/index.tpl');
     
    
 ?>

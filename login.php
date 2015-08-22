@@ -27,7 +27,11 @@
             $result = mysqli_query($link,$query);
             $row=mysqli_fetch_array($result);
             $results= sizeof($row);
-            if($results) $error= "That email address is already registered. Do you want to register instead?";
+            if($results) {
+                $error= "That email address is already registered. Do you want to register instead?";
+                $_SESSION['error']  = $error;
+                header("Location:index.php");
+            }
             else{
                 $query="INSERT INTO users3 (name, email, password)
                             VALUES ('Beth','$email','$securePass');";
