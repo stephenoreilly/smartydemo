@@ -40,9 +40,6 @@
     width:300px;
     margin:auto;
 }
-.formWrapper form{
-    text-align: left;
-}
 .remove{
     position:relative;
     float:right;
