@@ -1,5 +1,5 @@
 <?php
-/*%%SmartyHeaderCode:67001124155da0378864721_37868831%%*/
+/*%%SmartyHeaderCode:115377730155da1e20981359_37636743%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ec3d3f792dc8cf093b8492fbb334b49fa3f40a3f' => 
     array (
       0 => '/home/ubuntu/workspace/smarty/templates/add_product.tpl',
-      1 => 1440351093,
+      1 => 1440351247,
       2 => 'file',
     ),
     '4a4efbb76ffe2f58bbfd8c3c66f6c54ddee39f3f' => 
@@ -23,26 +23,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '67001124155da0378864721_37868831',
+  'nocache_hash' => '115377730155da1e20981359_37636743',
   'tpl_function' => 
   array (
   ),
-  'variables' => 
-  array (
-    'title' => 0,
-    'errors' => 0,
-    'formTextItems' => 0,
-    'v' => 0,
-    'formNumberItems' => 0,
-  ),
-  'has_nocache_code' => false,
   'version' => '3.1.28-dev/44',
-  'unifunc' => 'content_55da03788a9c31_97489646',
+  'unifunc' => 'content_55da1e251ef2a2_74047159',
+  'has_nocache_code' => false,
   'cache_lifetime' => 0,
 ),true);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_55da03788a9c31_97489646')) {
-function content_55da03788a9c31_97489646 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_55da1e251ef2a2_74047159')) {
+function content_55da1e251ef2a2_74047159 ($_smarty_tpl) {
 ?>
 <html> 
 <head> 
@@ -70,7 +62,7 @@ function content_55da03788a9c31_97489646 ($_smarty_tpl) {
                                         <input class="formElement" type="submit" value="Submit" />
                     <br/>
                     <br/>
-                    <a href="mainpage.php">Home</a> 
+                    <a href="mainpage.php">My Shop</a> 
                 </form>
             </div>
         </div>

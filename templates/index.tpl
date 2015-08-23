@@ -1,4 +1,5 @@
 {include file="header.tpl" title={$title} }
+    <a class="logo" href="https://stephen-oreilly.herokuapp.com/">Stephen O'Reilly</a>
         <div class="bodyContainer">
             <div class="formWrapper"> 
                 <h1>My Shop</h1>

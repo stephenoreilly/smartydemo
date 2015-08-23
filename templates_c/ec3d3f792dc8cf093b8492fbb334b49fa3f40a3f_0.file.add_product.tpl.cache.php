@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.28-dev/44, created on 2015-08-23 17:31:36
+<?php /* Smarty version 3.1.28-dev/44, created on 2015-08-23 19:25:20
          compiled from "/home/ubuntu/workspace/smarty/templates/add_product.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:67001124155da0378864721_37868831%%*/
+/*%%SmartyHeaderCode:115377730155da1e20981359_37636743%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ec3d3f792dc8cf093b8492fbb334b49fa3f40a3f' => 
     array (
       0 => '/home/ubuntu/workspace/smarty/templates/add_product.tpl',
-      1 => 1440351093,
+      1 => 1440351247,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '67001124155da0378864721_37868831',
+  'nocache_hash' => '115377730155da1e20981359_37636743',
   'variables' => 
   array (
     'title' => 0,
@@ -24,14 +24,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.28-dev/44',
-  'unifunc' => 'content_55da0378899f01_96651242',
+  'unifunc' => 'content_55da1e20ab0478_70724577',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_55da0378899f01_96651242')) {
-function content_55da0378899f01_96651242 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_55da1e20ab0478_70724577')) {
+function content_55da1e20ab0478_70724577 ($_smarty_tpl) {
 if (!is_callable('smarty_modifier_capitalize')) require_once '/home/ubuntu/workspace/smarty/libs/plugins/modifier.capitalize.php';
 
-$_smarty_tpl->properties['nocache_hash'] = '67001124155da0378864721_37868831';
+$_smarty_tpl->properties['nocache_hash'] = '115377730155da1e20981359_37636743';
 ob_start();
 echo $_smarty_tpl->tpl_vars['title']->value;
 $_tmp1=ob_get_clean();
@@ -111,7 +111,7 @@ $_smarty_tpl->tpl_vars['k'] = $__foreach_v_1_saved_key;
                     <input class="formElement" type="submit" value="Submit" />
                     <br/>
                     <br/>
-                    <a href="mainpage.php">Home</a> 
+                    <a href="mainpage.php">My Shop</a> 
                 </form>
             </div>
         </div>
