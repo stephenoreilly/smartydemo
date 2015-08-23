@@ -7,16 +7,16 @@
                 <form method="post">
                     {foreach from=$formTextItems key=k item=v}
                         <label class="formElement" for={$v}>{$v|capitalize}</label>
-                        <input class="formElement" type="text" name={$v} size="50"/>
+                        <input class="formElement addProd" type="text" name={$v} size="50"/>
                         <br/><br/>
                     {/foreach}
                     {foreach from=$formNumberItems key=k item=v}
                         <label class="formElement" for={$v}>{$v|capitalize}</label>
                         <br/>
-                        <input class="formElement" type="number" step="0.01"  name={$v} size="50" />
+                        <input class="formElement addProd" type="number" step="0.01"  name={$v} size="50" />
                         <br/><br/>
                     {/foreach}
-                    <input class="formElement" type="submit" value="Submit" />
+                    <input class="formElement addProd" type="submit" value="Submit" />
                     <br/>
                     <br/>
                     <a href="mainpage.php">Home</a> 
