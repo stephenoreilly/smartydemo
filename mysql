@@ -1,17 +1,17 @@
- $query="CREATE TABLE users3 (
+        CREATE TABLE users3 (
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         name VARCHAR(30) NOT NULL,
         email VARCHAR(50),
         password VARCHAR(50),
         reg_date TIMESTAMP
-            )";
+            );
 
-
-CREATE TABLE INFO (
-    t1ID INT,
-    t2ID INT,
-    PRIMARY KEY (t1ID, t2ID)
-) 
+CREATE TABLE items (
+         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+         name VARCHAR(30) NOT NULL,
+         price DECIMAL(10,2),
+         description VARCHAR(50),
+         reg_date TIMESTAMP);
 CREATE TABLE shoppingcart (
     
     item_id INT(6) UNSIGNED NOT NULL,
@@ -23,17 +23,8 @@ CREATE TABLE shoppingcart (
 
 ALTER TABLE shoppingcart
 ADD FOREIGN KEY (user_id)
-REFERENCES users3(id)
+REFERENCES users3(id);
+ALTER TABLE shoppingcart
+ADD FOREIGN KEY (item_id)
+REFERENCES items(id)
 
-
-
-
-    //  $query="CREATE TABLE users2 (
-    //    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-      //  name VARCHAR(30) NOT NULL,
-        //email VARCHAR(50),
-      //  password VARCHAR(50),
-    //    reg_date TIMESTAMP
-    //        )";
-        $query="INSERT INTO users3 (name, email, password)
-    VALUES ('Beth','example@example.com','');";
