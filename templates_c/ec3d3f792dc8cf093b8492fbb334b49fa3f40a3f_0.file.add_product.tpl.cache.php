@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.28-dev/44, created on 2015-08-22 08:00:21
+<?php /* Smarty version 3.1.28-dev/44, created on 2015-08-23 17:31:36
          compiled from "/home/ubuntu/workspace/smarty/templates/add_product.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:81807303355d82c151bfdd3_78656769%%*/
+/*%%SmartyHeaderCode:67001124155da0378864721_37868831%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ec3d3f792dc8cf093b8492fbb334b49fa3f40a3f' => 
     array (
       0 => '/home/ubuntu/workspace/smarty/templates/add_product.tpl',
-      1 => 1440230374,
+      1 => 1440351093,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '81807303355d82c151bfdd3_78656769',
+  'nocache_hash' => '67001124155da0378864721_37868831',
   'variables' => 
   array (
     'title' => 0,
@@ -24,14 +24,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.28-dev/44',
-  'unifunc' => 'content_55d82c151f9d08_49097171',
+  'unifunc' => 'content_55da0378899f01_96651242',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_55d82c151f9d08_49097171')) {
-function content_55d82c151f9d08_49097171 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_55da0378899f01_96651242')) {
+function content_55da0378899f01_96651242 ($_smarty_tpl) {
 if (!is_callable('smarty_modifier_capitalize')) require_once '/home/ubuntu/workspace/smarty/libs/plugins/modifier.capitalize.php';
 
-$_smarty_tpl->properties['nocache_hash'] = '81807303355d82c151bfdd3_78656769';
+$_smarty_tpl->properties['nocache_hash'] = '67001124155da0378864721_37868831';
 ob_start();
 echo $_smarty_tpl->tpl_vars['title']->value;
 $_tmp1=ob_get_clean();
@@ -43,8 +43,8 @@ echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smart
             <div class="formWrapper">
                 <p><?php echo $_smarty_tpl->tpl_vars['errors']->value;?>
 </p>
-                <h1>Add Product</h1>
                 <form method="post">
+                    <h1>Add Product</h1>
                     <?php
 $_from = $_smarty_tpl->tpl_vars['formTextItems']->value;
 if (!is_array($_from) && !is_object($_from)) {
@@ -62,7 +62,7 @@ $__foreach_v_0_saved_local_item = $_smarty_tpl->tpl_vars['v'];
                         <label class="formElement" for=<?php echo $_smarty_tpl->tpl_vars['v']->value;?>
 ><?php echo smarty_modifier_capitalize($_smarty_tpl->tpl_vars['v']->value);?>
 </label>
-                        <input class="formElement" type="text" name=<?php echo $_smarty_tpl->tpl_vars['v']->value;?>
+                        <input class="formElement addProd" type="text" name=<?php echo $_smarty_tpl->tpl_vars['v']->value;?>
  size="50"/>
                         <br/><br/>
                     <?php
@@ -94,7 +94,7 @@ $__foreach_v_1_saved_local_item = $_smarty_tpl->tpl_vars['v'];
 ><?php echo smarty_modifier_capitalize($_smarty_tpl->tpl_vars['v']->value);?>
 </label>
                         <br/>
-                        <input class="formElement" type="number" step="0.01"  name=<?php echo $_smarty_tpl->tpl_vars['v']->value;?>
+                        <input class="formElement addProd" type="number" step="0.01"  name=<?php echo $_smarty_tpl->tpl_vars['v']->value;?>
  size="50" />
                         <br/><br/>
                     <?php
