@@ -19,7 +19,7 @@
                     <input class="formElement" type="submit" value="Submit" />
                     <br/>
                     <br/>
-                    <a href="mainpage.php">Home</a> 
+                    <a href="mainpage.php">My Shop</a> 
                 </form>
             </div>
         </div>
